@@ -6,8 +6,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-// quick and dirty implementation of CIP
-// based on existing python based CIP library from internet
+// quick and dirty implementation of CIP to replace outdated OPC-DA for MES Excel config tool.
+// use as is basis. Because I don't build the CIP driver, this is based on existing python based CIP library from https://github.com/dmroeder/pylogix.git.
+// full credits goes to the person who built the driver (https://github.com/dmroeder)
+
 
 namespace CIPWriter
 {
@@ -41,7 +43,7 @@ namespace CIPWriter
         [ComVisible(true)]
         public string Version
         {
-            get { return "CIPWriter V1.0.0"; }
+            get { return "MES Config CIP Writer V1.0"; }
         }
 
         [ComVisible(true)]
