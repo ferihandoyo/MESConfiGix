@@ -1,0 +1,8 @@
+regasm is in C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+
+regasm /codebase "C:\Users\admin\source\repos\MESConfiGix\CIPWriter\bin\Debug\CIPWriter.dll"
+
+Generate TLB file using:
+	tlbexp .\CIPWriter.dll
+then point to the tlb file from VBA
+

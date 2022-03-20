@@ -16,6 +16,7 @@ namespace CIPWriter
         void Init(string IPAddress, int Rack = 1, int Slot = 0);
 
         bool IsConnected { get; }
+        string Version { get; }
         void WriteString(string TagName, string Valueu, int StringSize = 3900);
         void WriteReal(string TagName, float Value);
         void WriteInt(string TagName, int Value);
@@ -35,6 +36,12 @@ namespace CIPWriter
         public bool IsConnected
         {
             get { return _PLC == null ? false : _PLC.IsConnected; }
+        }
+
+        [ComVisible(true)]
+        public string Version
+        {
+            get { return "CIPWriter V1.0.0"; }
         }
 
         [ComVisible(true)]

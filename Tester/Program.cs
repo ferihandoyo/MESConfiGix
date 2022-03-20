@@ -10,7 +10,7 @@ namespace Tester
         {
             object value = new float[3] { 1, 2, 3 };
             PLC myPLC=new PLC();
-            myPLC.Init("192.168.0.29", 1, 3);
+            myPLC.Init("192.168.0.57", 1, 3);
 
             string tagname = "TotalCount";
 
